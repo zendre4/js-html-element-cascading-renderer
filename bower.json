@@ -1,0 +1,13 @@
+{
+  "name": "js-html-element-cascading-renderer",
+  "version": "1.0.0",
+  "homepage": "https://zendre4.github.io/js-html-element-cascading-renderer",
+  "authors": [
+    "Julien Stalder"
+  ],
+  "ignore":[
+    "*",
+    "!/dist/**",
+    "!/src/**"
+  ]
+}
