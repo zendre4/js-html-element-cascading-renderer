@@ -11,7 +11,7 @@ var JSHtmlElementCascadingRenderer = JSHtmlElementCascadingRenderer || function(
 
     /**
      * id of the component
-     * @type {string}
+     * @type {null|string}
      */
     this.id=null;
     if(typeof id !== "undefined"){
@@ -105,16 +105,16 @@ JSHtmlElementCascadingRenderer.prototype.renderTo = function (element) {
             attr.class = this.cssClasses.join(" ");
         }
 
+        //add id to attributes
+        if (this.id !==null) {
+            attr.id = this.id;
+        }
 
         //render attributes in element
         this._forEach(attr, function (key, value) {
             that.element.setAttribute(key, value);
         });
 
-        //add style to attributes
-        if (this.id !==null) {
-            attr.id = this.id;
-        }
 
         //render sub content
         this._forEach(this.subComponents, function (subComponent) {

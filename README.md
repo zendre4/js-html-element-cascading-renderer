@@ -38,7 +38,7 @@ topElement.renderTo(document.body)//htmlElementToRender must be a valid html ele
 #### Result
 
 ``` html
-<div data-attribute-1="1" data-attribute-2="2" class="class-1 class-2">
-    <span style="color:#f00;display:block">Hello world !</span>
+<div data-attribute-1="1" data-attribute-2="2" class="class-1 class-2" id="id1">
+    <span style="color:#f00;display:block" id="id2">Hello world !</span>
 </div>
 ```
